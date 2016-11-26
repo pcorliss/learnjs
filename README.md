@@ -6,8 +6,27 @@
 nvm install
 npm install -g livereloadx # First Time Install
 livereloadx -s -p 9292 ./public/
-# Navigate to localhost:9292
 ```
+
+http://localhost:9292
+http://localhost:9292/tests/index.html
+
+### Access Permissions
+
+The guide has us granting full permissions to the user for this.
+Would love to scope this down to just the necessities.
+
+AWS IAM User: `learnjs`
+
+### Deployment
+
+```
+./sspa create_bucket learnjs.50projects.com # First Time
+./sspa deploy_bucket learnjs.50projects.com
+```
+
+http://learnjs.50projects.com.s3-website-us-east-1.amazonaws.com
+http://learnjs.50projects.com
 
 ## Change Log
 
