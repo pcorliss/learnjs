@@ -4,6 +4,7 @@
 
 ```
 nvm install
+npm install -g livereloadx # First Time Install
 livereloadx -s -p 9292 ./public/
 # Navigate to localhost:9292
 ```
