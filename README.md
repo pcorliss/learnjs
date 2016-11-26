@@ -1,10 +1,19 @@
+## Phil's Notes
+
+### Running
+
+```
+nvm install
+livereloadx -s -p 9292 ./public/
+# Navigate to localhost:9292
+```
 
 ## Change Log
 
 ### Beta 3 Changes
 
   * Compensating for AWSCLI timing issues when creating roles
-  
+
 ### Beta 2 Changes
 
   * Now using 'admin' profile instead of default profile
