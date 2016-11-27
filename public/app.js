@@ -1,8 +1,15 @@
 'use strict';
 var learnjs = {};
 
-learnjs.problemView = function() {
-  return $('<div class="problem-view">').text('Coming Soon!');
+// I'm not really certain why we're not using jQuery's $(document).ready stuff here.
+learnjs.appOnReady = function() {
+  var showCurrentView = function() {learnjs.showView(window.location.hash)};
+  window.onhashchange = showCurrentView;
+  showCurrentView();
+};
+
+learnjs.problemView = function(index) {
+  return $('<div class="problem-view">').text('Problem #' + index + ' Coming Soon!');
 };
 
 learnjs.showView = function(hash){

@@ -20,7 +20,7 @@
           <div class='row'>
             <div class='one-half column'>
               <h3>Learn JavaScript, one puzzle at a time.</h3>
-              <a href='#' class='button button-primary'>Start Now!</a>
+              <a href='#problem-42' class='button button-primary'>Start Now!</a>
             </div>
             <div class='one-half column'>
               <img src='/images/HeroImage.jpg' alt='Hero' />
@@ -29,5 +29,11 @@
         </div>
       </div>
     </div>
+    <script type='text/javascript'>
+      // I'm not really certain why we're not using jQuery's $(document).ready stuff here.
+      // But this is the way the book presents it.
+      // Ask the author maybe?
+      $(window).ready(learnjs.appOnReady);
+    </script>
   </body>
 </html>
